@@ -2,7 +2,7 @@
 
 int main()
 {
-    int pal = 123;
+    int pal = 121;
     
     
     printf("%d", pal%10);
