@@ -12,9 +12,10 @@ int palindrom(int pal)
         
     }
     if(pal == mirror){
-        printf("este palindrom");
+//        return 1;
+    printf("%d\n", pal);
     } else {
-        printf("nu este palindrom");
+        return 0;
     }
     
 }
@@ -22,14 +23,21 @@ int palindrom(int pal)
 
 int main()
 {
-    int P, K,max, min;
+    int P, K,max, min, i, j;
     scanf("%d %d", &P, &K);
     max = pow(10,P);
     min = pow(10,P-1);
     printf("%d\n", max);
     printf("%d\n", min);
-
-    palindrom(121);
+    for(i = min; i < max; i++){
+        for(j = min; j < max; j++){
+            palindrom(i*j);
+//                printf("numerele %d si %d formeaza %d", i, j, (i*j));
+            }
+        }
+        
+    
+//    palindrom(123);
 
     return 0;
 }
