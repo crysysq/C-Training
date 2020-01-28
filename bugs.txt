@@ -1,0 +1,103 @@
+
+1. gasiti 3 bug-uri in urmatorul program:
+
+#include <stdio.h>
+
+int main()
+{
+    printf("Hello World!\n");
+
+	recursive(11);
+
+    return 0;
+}
+
+
+void recursive(int i){
+    
+    printf("%d\n",i);
+    
+    if(x==0){
+        return;
+    }
+    
+    return recursive(i--);
+}
+
+
+2. gasiti bug-ul:
+
+#include <stdio.h>
+
+short checkIfEqual(int a, int b){
+          
+    if(a=b){ 
+        return 1;
+    }
+      
+    return 0;
+}
+
+int main()
+{
+    
+    int x,y;
+    printf("introduceti 2 numere:\n");
+    scanf("%d%d",&x,&y);
+    
+    printf("%s", checkIfEqual(x,y) == 1 ? "numerele sunt egale" : "numerele NU sunt egale" );
+ 
+    return 0;
+}
+
+3. gasit bug-ul
+
+#include <stdio.h>
+ 
+
+int main()
+{
+    int sum = 0;
+    int n, i;
+    printf("introduceti N:\n");
+    scanf("%d", &n);
+    
+    for(i = n ; i > 0; i--)
+        sum += i;
+
+    printf("suma primelor %d numere este %d", n, sum);
+    return 0;
+}
+
+4. gasiti 2 bug-uri:
+
+#include <stdio.h>
+ 
+void printProduct(int arr[], int n){
+    long prod = 0;
+    int i=0;
+    for(i=0; i<=n; i++){
+        prod *= arr[i];
+    }
+    
+    printf("produs = %ld",prod);
+}
+
+int main()
+{
+    int i, n;
+    
+    printf("introduceti 1 numer intreg: \n");
+    scanf("%d", &n);
+    int v[n];
+    
+    printf("introduceti %d numere naturale: \n", n);
+    for(i=0; i<n; i++){
+        scanf("%d", &v[i]);
+    }
+    
+    printProduct(v, n);
+    
+    return 0;
+}
+

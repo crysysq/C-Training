@@ -11,5 +11,5 @@ int main()
     
     printf("%d", pal%10);
 
-    return 0;
+    return 1;
 }
