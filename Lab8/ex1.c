@@ -32,7 +32,13 @@ void citire(int mat[MAX][MAX], int nr_linii, int nr_coloane)
 
 int produs(int mat1[MAX][MAX], int mat2[MAX][MAX], int mat[MAX][MAX], int nr_linii1, int nr_coloane1,  int nr_linii2, int nr_coloane2)
 {
-	int i, j;
+	int i, j, k;
+ for (int i = 0; i < nr_linii1; ++i) {
+        for (int j = 0; j < nr_coloane2; ++j) {
+            mat[i][j] = 0;
+        }
+ }
+
 
 	if(nr_coloane1 == nr_linii2){
 
@@ -40,7 +46,8 @@ int produs(int mat1[MAX][MAX], int mat2[MAX][MAX], int mat[MAX][MAX], int nr_lin
 		{
 			for(j = 0; j <= nr_coloane2; j++)
 			{
-				mat[i][j] = mat1[i][j] * mat2[j][i];
+			    for(k = 0; k <= nr_coloane1; k ++)
+				mat[i][j] += mat1[i][k] * mat2[k][j];
 		
 			}
 		//	printf("%d", mat[i][j]);
@@ -79,3 +86,4 @@ int main()
 
 
 	
+

@@ -22,19 +22,19 @@ int div(int numar)
 
 int pereche(int a, int b)
 {
-	if((a == div(b)) && (b == div(a)) && (a>b))
+	if((a == div(b)) && (b == div(a)) && (a<b))
 	{
-		printf("( %d , %d )\n", a, b);
+		printf("(%d, %d)\n", a, b);
 	}
 	return 0;
 }
 
 void testPrint(int a, int b)
 {
-	if((a == div(b)) && (b== div(a)) && (a>b))
+	if((a == div(b)) && (b== div(a)) && (a<b))
 			
 	
-		printf("%d %d", a, b);
+		printf("%d %d", b, a);
 
 }
 
@@ -67,3 +67,4 @@ int main()
 
 
 }
+

@@ -27,13 +27,13 @@ int main()
     scanf("%d %d", &P, &K);
     max = pow(10,P);
     min = pow(10,P-1);
-    printf("%d\n", max);
-    printf("%d\n", min);
+//    printf("%d\n", max);
+//    printf("%d\n", min);
     for(i = 1; i < K; i++){
         for(j = 1; j < K; j++){
             if(((palindrom(i) * palindrom(j)) >= min) && ((palindrom(i) * palindrom(j)) < max))
                 {
-                printf("numerele %d si %d formeaza %d \n", i, j, (i*j));
+               // printf("numerele %d si %d formeaza %d \n", i, j, (i*j));
                 nr++;
                 }
             }
