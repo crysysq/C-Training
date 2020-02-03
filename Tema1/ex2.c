@@ -31,10 +31,12 @@ int main()
 //    printf("%d\n", min);
     for(i = 1; i < K; i++){
         for(j = 1; j < K; j++){
-            if(((palindrom(i) * palindrom(j)) >= min) && ((palindrom(i) * palindrom(j)) < max))
-                {
-               // printf("numerele %d si %d formeaza %d \n", i, j, (i*j));
-                nr++;
+            if((i != j) && (j > i)){
+                if(((palindrom(i) * palindrom(j)) >= min) && ((palindrom(i) * palindrom(j)) < max))
+                    {
+                // printf("numerele %d si %d formeaza %d \n", i, j, (i*j));
+                    nr++;
+                    }    
                 }
             }
         }

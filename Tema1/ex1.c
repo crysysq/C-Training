@@ -8,13 +8,14 @@ int div(int numar)
 	for(j=2;j<=numar/2;j++)
 	{
 		if(numar%j==0)
-		{			
+		{	
+//		    printf("%d", sumaDiv);
 			sumaDiv += j;
 			prim = 0;
 		}
 		
 	}	
-
+//    printf("%d", sumaDiv);
 	return sumaDiv;
 	if(prim==1)
 		return 0;
@@ -29,14 +30,7 @@ int pereche(int a, int b)
 	return 0;
 }
 
-void testPrint(int a, int b)
-{
-	if((a == div(b)) && (b== div(a)) && (a<b))
-			
-	
-		printf("%d %d", b, a);
 
-}
 
 int main()
 {
@@ -57,10 +51,10 @@ int main()
 	}	
 
 
-
-		
-			pereche(nr1,nr2);
-			testPrint(nr1, nr2);
+//            div(48);
+//		    div(75);
+//			pereche(nr1,nr2);
+			
 
 	
 		
