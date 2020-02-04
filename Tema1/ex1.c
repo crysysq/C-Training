@@ -5,7 +5,7 @@ int div(int numar)
 	int j;
 	int sumaDiv = 0;
 	int prim = 1;
-	for(j=2;j<=numar/2;j++)
+	for(j=1;j<=numar/2;j++)
 	{
 		if(numar%j==0)
 		{	
@@ -26,6 +26,16 @@ int pereche(int a, int b)
 	if((a == div(b)) && (b == div(a)) && (a<b))
 	{
 		printf("(%d, %d)\n", a, b);
+		
+	}
+	return 0;
+}
+int pereche2(int a)
+{
+	if((a == div(div(a))) && (a<div(a)))
+	{
+		printf("(%d, %d)\n", a, div(a));
+		
 	}
 	return 0;
 }
@@ -37,26 +47,15 @@ int main()
 	int nr1, nr2, N;
 	scanf("%d", &N);
 	
-	for(int i=1 ; i<N; i++)	
+	for(int i=1; i < N; i++)	
 	{
-//		if(div(div(i)) == i)
-//			printf("%d %d \n", i, div(i));
-	
+//	    for(int j=1; j < N; j++)
+//		{
+//		   
+//		}	
+    pereche2(i);
 
-
- 		for(int j=1; j < N; j++)
-		{
-			pereche(i,j);
-		}	
 	}	
-
-
-//            div(48);
-//		    div(75);
-//			pereche(nr1,nr2);
-			
-
-	
 		
 
 
