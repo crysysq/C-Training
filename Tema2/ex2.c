@@ -24,20 +24,13 @@ char *uppercase(char *str)
  // 		printf("%d\n",str[i]);
             {
                 str[0]=str[0]-32;
-            }
-      else if(str[i]==str[i+1])
-            {
-              printf("%d\n",i );
-              str[i] = str[i+1];
-              aux = str[i];
-              str
-            }       
+            } 
   		else if(str[i]>=65&&str[i]<=90)
  // 		printf("%d\n",str[i]);
             {
                 str[i]=str[i]+32;
             }
-
+        else if(str[i]>=
 	  	}
  //   printf("%s\n", str);
 
@@ -50,7 +43,7 @@ char *uppercase(char *str)
 
 int main()
 {
-	char sir[100] = "trecE   llebăDA pe ape";
+	char sir[100] = "trecE lebăDA pe ape";
 
 	printf("%s\n", uppercase(sir));
 

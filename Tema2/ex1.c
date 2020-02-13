@@ -4,17 +4,11 @@
 
 char *uppercase(char *str)
 {
-	char aux;
+
     
     int i = 0;
 	
-//    printf("%c\n", str[0]);
-//    printf("%d\n", strlen(str));   
 
-//    if(str[0] > 96 && str[0] < 123)
-//    {
-//    	str[0] = str[0] - 32;
-//    }
 
 
 
@@ -30,10 +24,6 @@ char *uppercase(char *str)
             {
                 str[i]=str[i]+32;
             }
-        else if(str[i]>=256&&str[i]<=510&&str[i]%2 ==0)
-            {
-                str[i] = str[i]+1;
-            }
 	  	}
  //   printf("%s\n", str);
 
@@ -46,12 +36,10 @@ char *uppercase(char *str)
 
 int main()
 {
-	char sir[100] = "trecE lebăDA pe apĂ";
-char a = 'Ă';
-char b = 'ă';
+	char sir[100] = "trecE lebăDA pe ape";
+
 	printf("%s\n", uppercase(sir));
-printf("%d\n", a);
-printf("%d\n", b);
+
   /*	for(int  i=0; i<= 7; i++)
 	 	{
   		if(sir[i]>=65&&sir[i]<=90)
