@@ -46,7 +46,7 @@ int main()
 
     for(i=0;i< n;i++)
     {
-        for(j=0;j<i+1;j++)
+        for(j=0;j<n-i;j++)
         {
             printf("Enter element [%d,%d] : ",i+1,j+1);
             scanf("%d",&matrix_superior[i][j]);
@@ -63,7 +63,10 @@ int main()
 			for(j = 0; j < n; j++)
 			{
 			    for(k = 0; k < i+1; k++)
+				{
+					if(k < )
 					matrix_result[i][j] += matrix_inferior[i][k] * matrix_superior[k][j];
+				}
 		
 			}
 			
